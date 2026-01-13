@@ -5,23 +5,23 @@ pygame.font.init()
 
 white=(255,255,255)
 
-bg = pygame.transform.scale(pygame.image.load("C:\\Users\\Mystical\\Python\\Bonus Project\\TRACK.png"),(800,800))
+bg = pygame.transform.scale(pygame.image.load("TRACK.png"),(800,800))
 bgcoord=(0,0)
 bgimages=(bg,bgcoord)
 
-track = pygame.transform.scale(pygame.image.load("C:\\Users\\Mystical\\Python\\Bonus Project\\TRACK_BORDER.png"),(800,800))
+track = pygame.transform.scale(pygame.image.load("TRACK_BORDER.png"),(800,800))
 track_mask=pygame.mask.from_surface(track)
 
-finish = pygame.transform.scale(pygame.image.load("C:\\Users\\Mystical\\Python\\Bonus Project\\FINISH.png"),(800,800))
+finish = pygame.transform.scale(pygame.image.load("FINISH.png"),(800,800))
 finish_mask=pygame.mask.from_surface(finish)
 
-finish_flag = pygame.transform.scale(pygame.image.load("C:\\Users\\Mystical\\Python\\Bonus Project\\FINISH_FLAG.png"),(800,800))
+finish_flag = pygame.transform.scale(pygame.image.load("FINISH_FLAG.png"),(800,800))
 finish_flag_mask=pygame.mask.from_surface(finish_flag)
 
 font = pygame.font.SysFont("Roboto", 44)
 
-car = pygame.transform.scale(pygame.image.load("C:\\Users\\Mystical\\Python\\Bonus Project\\CAR.png"),(15, 25))
-car2 = pygame.transform.scale(pygame.image.load("C:\\Users\\Mystical\\Python\\Bonus Project\\CAR2.png"),(15, 25))
+car = pygame.transform.scale(pygame.image.load("CAR.png"),(15, 25))
+car2 = pygame.transform.scale(pygame.image.load("CAR2.png"),(15, 25))
 
 WIN = pygame.display.set_mode((800,800))
 pygame.display.set_caption("FIRST GAME")
@@ -207,5 +207,6 @@ def main():
             start_time=time.time()
 
     pygame.quit()
+
 
 main()
